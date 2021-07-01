@@ -1,10 +1,28 @@
 <html>
+<head>
+<title>SSLTESTER</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
 <body>
-<h2>Hello World!</h2>
-<form name="testForm" method="post" action="testConnection">
-    URL: <input type="text" name="url"/> <br/>
-    PORT: <input type="text" name="port"/> <br/>
-    <input type="submit" value="Testa connessione" />
-</form>
+<div class="login-box">
+  <h2>Insert url and port</h2>
+  <form name="testForm2" method="post" action="testConnection">
+    <div class="user-box">
+      <input type="text" name="url" required="">
+      <label>URL</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="port" required="">
+      <label>PORT</label>
+    </div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <input type="image" src=icon.png alt="Submit feedback"/>
+    </a>
+  </form>
+</div>
 </body>
 </html>

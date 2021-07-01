@@ -74,12 +74,15 @@ public class testConnection extends HttpServlet {
         PrintWriter writer = response.getWriter();
          
         // build HTML code
-        String htmlRespone = "<html>";
-        htmlRespone += "<h2>Connessione effettuata a " + url + " \n\rVerificare i log";      
+        String cssTag="<link rel='stylesheet' type='text/css' href='style.css'>";
+        String htmlResponse = "<html><head><title>Title Name</title>"+cssTag+"</head>";
+        htmlResponse += "<body> <div class=\"login-box\"> <h2>Connessione effettuata a<br/>" + url + "<br/><br/>Verificare i log</h2></div>";
+        htmlResponse += "</html>";   
 
         // return response
-        writer.println(htmlRespone);
+        writer.println(htmlResponse);
          
     }
  
 }
+
